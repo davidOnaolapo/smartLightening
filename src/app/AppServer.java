@@ -23,12 +23,12 @@ public class AppServer {
 			Socket s2 = s.accept();
 
 			System.out.println("SVR: Got connection to some IDIOT");
-			BufferedReader clientIn = new BufferedReader(new InputStreamReader(s2.getInputStream())); //for reading from TEH socket
+			BufferedReader clientIn = new BufferedReader(new InputStreamReader(s2.getInputStream())); //for reading from the socket
 			PrintWriter clientOut = new PrintWriter(new OutputStreamWriter(s2.getOutputStream()));
 
 			String line;
 					
-			clientOut.println("HELLO WELCOME TO MY SERVER UwU. Welcome WELGUM");
+			clientOut.println("WELCOME TO MY SERVER");
 			clientOut.flush();
 			boolean exit = false;
 			
